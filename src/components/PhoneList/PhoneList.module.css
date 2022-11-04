@@ -1,26 +1,24 @@
 .phoneList {
   margin-top: 20px;
-  margin-left: 15px;
+
   list-style: none;
-  width: 300px;
+  /* width: 300px; */
 }
 .phoneName,
 .phoneNumber {
   min-width: 80px;
 }
 .phoneItem {
-  margin-bottom: 10px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
-.btnDelete {
-  border: transparent;
-  border-radius: 5px;
-  outline: 1px solid black;
-
-  color: darkorchid;
+.phoneItem .btnDelete {
+  margin-left: 10px;
 }
 
 .loader {

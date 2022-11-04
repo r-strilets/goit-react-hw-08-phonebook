@@ -1,3 +1,5 @@
+import s from './HomePage.module.css';
+
 export const HomePage = () => {
-  return <>Welcom to myApp!!!</>;
+  return <h2 className={s.mainText}>Welcome to Phonebook!!!</h2>;
 };

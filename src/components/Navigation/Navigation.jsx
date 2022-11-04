@@ -1,12 +1,12 @@
-import { NavLink } from "react-router-dom";
-import { useSelector } from "react-redux";
-import { selectToken } from "redux/auth/authSelectors";
-
+import { NavLink } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import { selectToken } from 'redux/auth/authSelectors';
+import s from './Navigation.module.css';
 export const Navigation = () => {
   const token = useSelector(selectToken);
   return (
     <nav>
-      <ul>
+      <ul className={s.navigation}>
         <li>
           <NavLink to="/" end>
             Home
