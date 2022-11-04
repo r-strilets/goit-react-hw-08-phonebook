@@ -10,7 +10,7 @@ export const Layout = () => {
   const token = useSelector(selectToken);
   return (
     <>
-      <header>
+      <header className={s.header}>
         <Navigation />
         {token ? <UserAuthMenu /> : <AuthNavigation />}
       </header>
