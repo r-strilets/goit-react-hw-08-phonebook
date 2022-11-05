@@ -10,3 +10,8 @@
 .navigation.active {
   color: rgb(5, 25, 248);
 }
+
+.navigation svg {
+  width: 35px;
+  height: 35px;
+}

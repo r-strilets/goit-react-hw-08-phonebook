@@ -49,27 +49,28 @@ export const ContactList = () => {
           renderContacts.map(({ id, name, number }) => {
             return (
               <li key={id} className={s.phoneItem}>
-                <div>
-                  <span className={s.phoneName}>☎ {name} :</span>
-                  <span className={s.phoneNumber}>{number}</span>
+                <div className={s.itemWrap}>
+                  <div className={s.spanWrap}>
+                    <span className={s.phoneName}>☎ {name} :</span>
+                    <span className={s.phoneNumber}>{number}</span>
+                  </div>
+                  <div className={s.phoneButtons}>
+                    <Button
+                      className={s.btnDelete}
+                      variant="outlined"
+                      startIcon={<DeleteIcon />}
+                      title="Delete"
+                      onClick={() => dispatch(deleteContact(id))}
+                    ></Button>
 
-                  <Button
-                    className={s.btnDelete}
-                    variant="outlined"
-                    startIcon={<DeleteIcon />}
-                    onClick={() => dispatch(deleteContact(id))}
-                  >
-                    Delete
-                  </Button>
-
-                  <Button
-                    className={s.btnDelete}
-                    variant="outlined"
-                    startIcon={<EditIcon />}
-                    onClick={() => showUpdateForm(id)}
-                  >
-                    Edit
-                  </Button>
+                    <Button
+                      className={s.btnDelete}
+                      variant="outlined"
+                      startIcon={<EditIcon />}
+                      title="Edit"
+                      onClick={() => showUpdateForm(id)}
+                    ></Button>
+                  </div>
                 </div>
 
                 {contactToUpdate?.id === id && (

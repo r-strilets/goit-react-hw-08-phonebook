@@ -24,3 +24,8 @@ ul {
 a.active {
   color: #1976d2;
 }
+
+a {
+  text-decoration: none;
+  color: black;
+}

@@ -20,15 +20,6 @@ export const Filter = () => {
         onChange={handleFilterContactsByName}
         autoComplete="false"
       />
-
-      {/* <label>
-        <span className={s.msgFilter}>Find contact by name</span>
-        <input
-          type="text"
-          onChange={handleFilterContactsByName}
-          className={s.inputFilter}
-        />
-      </label> */}
     </div>
   );
 };

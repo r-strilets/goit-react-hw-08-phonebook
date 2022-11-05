@@ -39,7 +39,6 @@ export const RegisterForm = () => {
   return (
     <form className={s.registerForm} onSubmit={handleSubmit}>
       <TextField
-        // id="outlined-basic"
         label="Name:"
         variant="outlined"
         type="text"
@@ -49,7 +48,6 @@ export const RegisterForm = () => {
       />
 
       <TextField
-        // id="outlined-basic"
         label="Email:"
         variant="outlined"
         type="email"
@@ -59,7 +57,6 @@ export const RegisterForm = () => {
       />
 
       <TextField
-        // id="outlined-basic"
         label="Password:"
         variant="outlined"
         type="password"
